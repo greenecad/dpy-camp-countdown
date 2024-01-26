@@ -1,4 +1,11 @@
+html{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display:flex;
     flex-direction: column;
@@ -12,7 +19,6 @@ body {
     background: linear-gradient(135deg, #52f289, #53d1f1);
     width:100%;
     height:100vh;
-    margin: 0;
     text-align: center;
 }
 #t2{
@@ -20,6 +26,28 @@ body {
     justify-content: center;
     align-items: center;
 }
+.topimg{
+    position:absolute;
+    margin:0;
+    padding:0;
+}
+
+#earth{
+    top:65vh;
+    left:5vw;
+    width:13vw;
+}
+#dove{
+    top:15vh;
+    left:85vw;
+    width:14vw;
+}
+#cross{
+    top:70vh;
+    left:78vw;
+    width:11vw;
+}
+
 #title{
     text-align: center;
     padding-top:40px;
@@ -47,7 +75,13 @@ body {
     margin-top:10px;
 }
 .smiley{
-    width:20vh;
+    height:20vh;
+}
+#bottom{
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+
 }
 .header-text{
     border-radius: 15px;
@@ -56,17 +90,58 @@ body {
     text-align: center;
 }
 .header{
-    border: 2px solid #ce5334;
-    background-color: #fe8668;
+    border: 4px solid grey;
+    background-color: #ffffff;
     width: 100vw;
-    border-radius: 15px;
-    margin:-15px;
+    margin-bottom:0;
+    margin-left:-4px;
+    z-index: 1;
+    position:relative;
 
 }
+.body{
+    display:flex;
+    height:fit-content;
+    margin:0px;
+    margin-top:-10px;
+    flex-direction:row;
+}
+.bodyImageDiv{
+    width:40%;
+    height:60vh;
+    margin:0;
+    padding:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #53d1f1;
+}
+.bodyImage{
+    height:40vh;
 
+}
+.body-paragraph{
+    color:grey;
+    font-size:1.3em;
+    margin:60px;
+    width:40vw
+}
+@media(max-width:1000px){
+    #earth{
+        left:0vw;
+        top:80vh;
+    }
+}
 @media(max-width:840px){
+    #title{
+        font-size: 2.7rem;
+        padding-top:5px;
+    }
     .timer-unit{
         display:block
+    }
+    .smiley{
+        height:15vh;
     }
     #countdown{
         padding-left:150px;
@@ -75,8 +150,48 @@ body {
     .header{
         font-size:2rem;
     }
+    #top{
+        height:140vh;
+    }
+    
+    #earth{
+        top:100vh;
+        left:5vw;
+        width:16vw;
+    }
+    #dove{
+        top:26vh;
+        left:13vw;
+        width:19vw;
+    }
+    #cross{
+        top:65vh;
+        left:80vw;
+        width:15vw;
+    }
+}
+@media(max-width:650px){
+    #title{
+        font-size: 2.5rem;
+    }
+    .body{
+        display:block;
+    }
+.bodyImageDiv{
+        width:100vw;
+        height:50vh;
+    }
+    .bodyImage{
+        height:40vh;
+    }
+    .body-paragraph{
+        width:80vw;
+    }
 }
 @media(max-width:500px){
+    #title{
+        font-size: 2.3rem;
+    }
     #timer{
         font-size: 2rem;
     }
@@ -90,4 +205,21 @@ body {
     .header{
         font-size:1.5rem;
     }
+    #earth{
+        top:100vh;
+        left:0vw;
+        width:18vw;
+    }
+    #dove{
+        top:30vh;
+        left:11vw;
+        width:21vw;
+    }
+    #cross{
+        width:19vw;
+    }
+    #title{
+        margin-top:0px;
+    }
+    
 }
