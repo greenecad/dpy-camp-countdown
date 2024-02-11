@@ -1,3 +1,4 @@
+console.log("A")
 const targetDate=new Date("2024-06-29T10:00:00");
 const updateCountdown=()=>{
     const currentTime=new Date();
