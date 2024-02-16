@@ -35,17 +35,17 @@ body {
 #earth{
     top:65vh;
     left:5vw;
-    width:13vw;
+    width:16vw;
 }
 #dove{
     top:15vh;
     left:85vw;
-    width:14vw;
+    width:18vw;
 }
 #cross{
     top:70vh;
     left:78vw;
-    width:11vw;
+    width:14vw;
 }
 
 #title{
@@ -90,11 +90,11 @@ body {
     text-align: center;
 }
 .header{
-    border: 4px solid grey;
+    border: 2px solid grey;
     background-color: #ffffff;
     width: 100vw;
     margin-bottom:0;
-    margin-left:-4px;
+    margin-left:0px;
     z-index: 1;
     position:relative;
 
@@ -122,9 +122,13 @@ body {
 }
 .body-paragraph{
     color:grey;
-    font-size:1.3em;
+    font-size:1.3rem;
     margin:60px;
     width:40vw
+}
+.right{
+    margin-left: auto; 
+    margin-right: 0;
 }
 @media(max-width:1000px){
     #earth{
@@ -134,8 +138,8 @@ body {
 }
 @media(max-width:840px){
     #title{
-        font-size: 2.7rem;
-        padding-top:5px;
+        font-size: 2.3rem;
+        padding-top:3px;
     }
     .timer-unit{
         display:block
@@ -155,7 +159,7 @@ body {
     }
     
     #earth{
-        top:100vh;
+        top:80vh;
         left:5vw;
         width:16vw;
     }
@@ -165,14 +169,14 @@ body {
         width:19vw;
     }
     #cross{
-        top:65vh;
+        top:55vh;
         left:80vw;
         width:15vw;
     }
 }
 @media(max-width:650px){
     #title{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .body{
         display:block;
@@ -190,7 +194,7 @@ body {
 }
 @media(max-width:500px){
     #title{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     #timer{
         font-size: 2rem;
@@ -206,17 +210,17 @@ body {
         font-size:1.5rem;
     }
     #earth{
-        top:100vh;
+        top:80vh;
         left:0vw;
-        width:18vw;
+        width:24vw;
     }
     #dove{
         top:30vh;
-        left:11vw;
-        width:21vw;
+        left:8vw;
+        width:31vw;
     }
     #cross{
-        width:19vw;
+        width:24vw;
     }
     #title{
         margin-top:0px;
